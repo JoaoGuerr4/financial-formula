@@ -8,12 +8,7 @@ export class FinancialController {
     protected financialService: FinancialService,
 
   ) {}
-
-  @Get('')
-  teste(){
-    return "hello"
-  }
-
+  
   @Post('payment')
   async payment(@Body() request: BodyModel ):Promise<any> {
     return this.financialService.payment(
