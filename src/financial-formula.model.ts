@@ -12,6 +12,6 @@ export class BodyModel {
     presentValue: number
 
     @IsNumber()
-    payment
+    payment: number
 
 }
